@@ -317,7 +317,6 @@ text-decoration:none;
 
 /* ============================search============================= */
  .search--form{display: flex;
-
 align-items: center;
 column-gap: .5rem;
 width: 40%;
@@ -454,7 +453,7 @@ transition: transform .4s;
 
   .search--form {
     max-width: 450px;
-    margin-inline: auto;
+    margin-inline: auto ;
   }
 
   .search--close,

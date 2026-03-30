@@ -1,6 +1,70 @@
 const queryString =window.location.search
 const urlParams =new URLSearchParams(queryString);
 const productID =urlParams.get('id');
+// NAVBAR 
+/*===== MENU SHOW =====*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close');
+
+/* */
+if(navToggle){
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu');
+    });
+}
+
+/*MENU HIDDEN*/
+if(navClose){   
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu');
+    });
+}
+
+
+// ===========SEARCH=============
+const search=document.getElementById('s34rch'),
+searchBtn=document.getElementById('search-btn'),
+searchClose=document.getElementById('search-close')
+
+// search show 
+if(searchBtn){
+    searchBtn.addEventListener('click',()=>{
+        search.classList.add('show-search')
+    })
+}
+
+// search hidden 
+if(searchClose){
+    searchClose.addEventListener('click',()=>{
+        search.classList.remove('show-search')
+    })
+}
+
+/*=============== LOGIN ===============*/
+const login = document.getElementById('login'),
+      loginBtn = document.getElementById('login-btn'),
+      loginClose = document.getElementById('login-close')
+
+/* Login show */
+loginBtn.addEventListener('click', () =>{
+   login.classList.add('show-login')
+})
+
+/* Login hidden */
+loginClose.addEventListener('click', () =>{
+   login.classList.remove('show-login')
+})
+// MAIN 
+
+let currentLocation = window.location.href;
+let menuItems = document.querySelectorAll('.nav-link');
+menuItems.forEach(item => 
+    { if (item.href === currentLocation) 
+    { item.classList.add('active'); } 
+});
+function toggleSearch() {
+    document.getElementById('searchBox').classList.toggle('active')};
 
 const mirrors = [
 { id: 1, name: "Premium Decor Mirror 1", price: 16500, currency: "PKR", materialType: "Antique", mirrorType: "Dining Room Mirror", image: "https://picsum.photos/seed/mirror1/500/500", description: "An elegant antique-style mirror perfect for enhancing dining room aesthetics with a classic touch." },
@@ -66,22 +130,38 @@ const mirrors = [
 
 
 const singleproduct=mirrors.find(function(item){
-
+    
     return item.id==productID;
 });
 
 let container=document.getElementById('detail')
-container.innerHTML=` <div class="col-md-3">
-                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="${singleproduct.image}" class="d-block w-100 img-fluid" alt="Product Image 1">
-                        </div>
-                    </div>
-
-                </div>
+function download(){
+    html2pdf().from(container).save('abc.pdf')
+}   
+container.innerHTML=` <div class="col-md-6">
+             <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="${singleproduct.image}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-5">
                 <h1>${singleproduct.name}</h1>
                 <div class="mb-3">
                     <span class="badge bg-success">In Stock</span>
@@ -90,6 +170,32 @@ container.innerHTML=` <div class="col-md-3">
                 <p>${singleproduct.description}</p>
                 <p><b>Material Type: </b>${singleproduct.materialType}</p>
                 <p><b>Mirror Type: </b>${singleproduct.mirrorType}</p>
-                <button class="btn btn-primary btn-lg">Add to Cart</button>
+                <button onclick="download()" class="btn btn-primary btn-lg">Download-PDF</button>
 
             </div>`
+
+            // =============================================SIMILAR ============================================ 
+
+
+        const currentMirror =mirrors.find(m =>m.id== productID);
+
+        const similarMirrors=mirrors.filter(m=> m.mirrorType===currentMirror.mirrorType &&m.id !==currentMirror.id).slice(0,4);
+
+        const similarcontainer=document.getElementById('similar')
+        similarMirrors.forEach(item => {
+            similarcontainer.innerHTML += `
+                <div class="col-6 col-sm-5 g-3 col-lg-3">
+                    <a href="./single.html?id=${item.id}" class="card-link text-decoration-none">
+                        <div class="card text-left h-100">
+                            <img class="card-img-top" src="${item.image}" alt="${item.name}">
+                            <div class="card-body">
+                                <h4 class="card-title fs-4 text-dark">${item.name}</h4>
+                                <p class="card-text text-dark fs-5">Rs. <b>${item.price.toLocaleString()}</b></p>
+                                <p class="card-text text-muted fs-6 text-truncate">${item.description}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            `;
+        });
+        
