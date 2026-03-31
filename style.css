@@ -501,3 +501,7 @@ margin-right: 16rem;
     margin-inline: auto;
   }
 }
+/* single  */
+.active2{
+  border:2px solid blue !important;
+}
