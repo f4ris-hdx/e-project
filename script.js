@@ -1,3 +1,6 @@
+
+
+
 // NAVBAR 
 /*===== MENU SHOW =====*/
 const navMenu = document.getElementById('nav-menu'),
@@ -74,9 +77,9 @@ materialType: "Antique",
 mirrorType: "Dining Room Mirror",
 size: "24x30",
 size2: "28x34",
-image: "https://picsum.photos/seed/mirror1a/500/500",
-image2: "https://picsum.photos/seed/mirror1b/500/500",
-image3: "https://picsum.photos/seed/mirror1c/500/500",
+image: "/images/imgs/antique/antique2.jpg",
+image2: "/images/imgs/antique/antique1.jpg",
+image3: "/images/imgs/antique/antique3.jpg",
 description: "An elegant antique‑style mirror designed to enhance dining room interiors with a refined and timeless aesthetic."
 },
 {
@@ -88,9 +91,9 @@ materialType: "Bluetooth",
 mirrorType: "Bathroom Mirror",
 size: "22x32",
 size2: "26x36",
-image: "https://picsum.photos/seed/mirror2a/500/500",
-image2: "https://picsum.photos/seed/mirror2b/500/500",
-image3: "https://picsum.photos/seed/mirror2c/500/500",
+image: "/images/imgs/bluetooth/bluetooth1.jpg",
+image2: "/images/imgs/bluetooth/bluetooth2.jpg",
+image3: "/images/imgs/bluetooth/bluetooth3.jpg",
 description: "A modern smart mirror with Bluetooth connectivity, perfect for stylish and tech‑savvy bathrooms."
 },
 {
@@ -102,9 +105,9 @@ materialType: "Wooden Framed",
 mirrorType: "Hallway Mirror",
 size: "20x28",
 size2: "24x32",
-image: "https://picsum.photos/seed/mirror3a/500/500",
-image2: "https://picsum.photos/seed/mirror3b/500/500",
-image3: "https://picsum.photos/seed/mirror3c/500/500",
+image: "/images/imgs/wooden framed 1/woodenframed2.jpg",
+image2: "/images/imgs/wooden framed 1/woodenframed1.jpg",
+image3: "/images/imgs/wooden framed 1/woodenframed3.jpg",
 description: "A beautifully crafted wooden framed mirror that adds vintage charm to hallways."
 },
 {
@@ -116,9 +119,9 @@ materialType: "Acrylic Bordered",
 mirrorType: "Office Mirror",
 size: "21x29",
 size2: "25x33",
-image: "https://picsum.photos/seed/mirror4a/500/500",
-image2: "https://picsum.photos/seed/mirror4b/500/500",
-image3: "https://picsum.photos/seed/mirror4c/500/500",
+image: "/images/imgs/arcylic/arcylic3.jpg",
+image2: "/images/imgs/arcylic/arcylic2.jpg",
+image3: "/images/imgs/arcylic/arcylic1.jpg",
 description: "A sleek minimalist mirror designed to complement modern office interiors with style and functionality."
 },
 {
@@ -130,9 +133,9 @@ materialType: "Decorative",
 mirrorType: "Living Room Mirror",
 size: "24x30",
 size2: "28x36",
-image: "https://picsum.photos/seed/mirror5a/500/500",
-image2: "https://picsum.photos/seed/mirror5b/500/500",
-image3: "https://picsum.photos/seed/mirror5c/500/500",
+image: "images/imgs/decor/decor1.jpg",
+image2: "images/imgs/decor/decor2.jpg",
+image3: "images/imgs/decor/decor3.jpg",
 description: "A decorative mirror with crystal‑like detailing, perfect for elevating the elegance of living room décor."
 },
 {
@@ -158,9 +161,9 @@ materialType: "LED",
 mirrorType: "Bathroom Mirror",
 size: "23x31",
 size2: "27x35",
-image: "https://picsum.photos/seed/mirror7a/500/500",
-image2: "https://picsum.photos/seed/mirror7b/500/500",
-image3: "https://picsum.photos/seed/mirror7c/500/500",
+image: "images/imgs/LED/LED1.jpg",
+image2: "images/imgs/LED/LED2.jpg",
+image3: "images/imgs/LED/LED3.jpg",
 description: "An LED‑lit mirror providing optimal illumination and a contemporary feel for bathrooms."
 },
 {
@@ -172,9 +175,9 @@ materialType: "Frameless",
 mirrorType: "Salon Mirror",
 size: "20x26",
 size2: "24x30",
-image: "https://picsum.photos/seed/mirror8a/500/500",
-image2: "https://picsum.photos/seed/mirror8b/500/500",
-image3: "https://picsum.photos/seed/mirror8c/500/500",
+image: "images/imgs/frameless/frameless3.jpg",
+image2: "images/imgs/frameless/frameless2.jpg",
+image3: "images/imgs/frameless/frameless1.jpg",
 description: "A frameless vanity mirror for salon settings with a clean, classic look."
 },
 {
@@ -186,9 +189,9 @@ materialType: "Antique",
 mirrorType: "Living Room Mirror",
 size: "25x33",
 size2: "30x38",
-image: "https://picsum.photos/seed/mirror9a/500/500",
-image2: "https://picsum.photos/seed/mirror9b/500/500",
-image3: "https://picsum.photos/seed/mirror9c/500/500",
+image: "/images/imgs/antique2/antique1.jpg",
+image2: "/images/imgs/antique2/antique2.jpg",
+image3: "/images/imgs/antique2/antique3.jpg",
 description: "A luxurious antique frame mirror that becomes a statement centerpiece."
 },
 {
@@ -200,9 +203,9 @@ materialType: "Acrylic Bordered",
 mirrorType: "Entryway Mirror",
 size: "22x22",
 size2: "26x26",
-image: "https://picsum.photos/seed/mirror10a/500/500",
-image2: "https://picsum.photos/seed/mirror10b/500/500",
-image3: "https://picsum.photos/seed/mirror10c/500/500",
+image: "/images/imgs/arcylic3/arcylic2.jpg",
+image2: "/images/imgs/arcylic3/arcylic3.jpg",
+image3: "/images/imgs/arcylic3/arcylic1.jpg",
 description: "A stylish round mirror ideal for entryways, offering a welcoming look."
 },
 {
@@ -214,9 +217,9 @@ materialType: "Decorative",
 mirrorType: "Dining Room Mirror",
 size: "24x28",
 size2: "28x32",
-image: "https://picsum.photos/seed/mirror11a/500/500",
-image2: "https://picsum.photos/seed/mirror11b/500/500",
-image3: "https://picsum.photos/seed/mirror11c/500/500",
+image: "images/imgs/decor2/decor3.jpg",
+image2: "images/imgs/decor2/decor2.jpg",
+image3: "images/imgs/decor2/decor1.jpg",
 description: "A refined decorative mirror crafted to enhance dining spaces with elegance."
 },
 {
@@ -228,9 +231,9 @@ materialType: "Bluetooth",
 mirrorType: "Bathroom Mirror",
 size: "23x33",
 size2: "27x37",
-image: "https://picsum.photos/seed/mirror12a/500/500",
-image2: "https://picsum.photos/seed/mirror12b/500/500",
-image3: "https://picsum.photos/seed/mirror12c/500/500",
+image: "/images/imgs/bluetooth2/bluetooth1.jpg",
+image2: "/images/imgs/bluetooth2/bluetooth2.jpg",
+image3: "/images/imgs/bluetooth2/bluetooth3.jpg",
 description: "An advanced smart mirror with Bluetooth features for modern bathrooms."
 },
 {
@@ -242,9 +245,9 @@ materialType: "Wooden Framed",
 mirrorType: "Hallway Mirror",
 size: "20x28",
 size2: "24x32",
-image: "https://picsum.photos/seed/mirror13a/500/500",
-image2: "https://picsum.photos/seed/mirror13b/500/500",
-image3: "https://picsum.photos/seed/mirror13c/500/500",
+image: "/images/imgs/wooden framed 2/woodenframed3.jpg",
+image2: "/images/imgs/wooden framed 2/woodenframed2.jpg",
+image3: "/images/imgs/wooden framed 2/woodenframed1.jpg",
 description: "A charming vintage mirror that adds character and warmth to entry halls."
 },
 {
@@ -270,9 +273,9 @@ materialType: "Decorative",
 mirrorType: "Living Room Mirror",
 size: "24x30",
 size2: "28x36",
-image: "https://picsum.photos/seed/mirror15a/500/500",
-image2: "https://picsum.photos/seed/mirror15b/500/500",
-image3: "https://picsum.photos/seed/mirror15c/500/500",
+image: "images/imgs/decor3/decor2.jpg",
+image2: "images/imgs/decor3/decor3.jpg",
+image3: "images/imgs/decor3/decor1.jpg",
 description: "A decorative mirror with crystal shine accents to elevate interior luxury."
 },
 {
@@ -284,9 +287,9 @@ materialType: "Wooden Framed",
 mirrorType: "Bedroom Mirror",
 size: "22x28",
 size2: "26x34",
-image: "https://picsum.photos/seed/mirror16a/500/500",
-image2: "https://picsum.photos/seed/mirror16b/500/500",
-image3: "https://picsum.photos/seed/mirror16c/500/500",
+image: "/images/imgs/wooden framed 3/woodenframed2.jpg",
+image2: "/images/imgs/wooden framed 3/woodenframed1.jpg",
+image3: "/images/imgs/wooden framed 3/woodenframed3.jpg",
 description: "A wooden framed mirror bringing warmth and classic style to bedroom décor."
 },
 {
@@ -298,9 +301,9 @@ materialType: "LED",
 mirrorType: "Bathroom Mirror",
 size: "23x31",
 size2: "27x35",
-image: "https://picsum.photos/seed/mirror17a/500/500",
-image2: "https://picsum.photos/seed/mirror17b/500/500",
-image3: "https://picsum.photos/seed/mirror17c/500/500",
+image: "images/imgs/LED2/LED1.jpg",
+image2: "images/imgs/LED2/LED2.jpg",
+image3: "images/imgs/LED2/LED3.jpg",
 description: "A premium LED mirror offering bright illumination and sleek bathroom styling."
 },
 {
@@ -382,9 +385,9 @@ materialType: "Wooden Framed",
 mirrorType: "Hallway Mirror",
 size: "20x28",
 size2: "24x32",
-image: "https://picsum.photos/seed/mirror23a/500/500",
-image2: "https://picsum.photos/seed/mirror23b/500/500",
-image3: "https://picsum.photos/seed/mirror23c/500/500",
+image: "/images/imgs/wooden framed 4/woodenframed1.jpg",
+image2: "/images/imgs/wooden framed 4/woodenframed2.jpg",
+image3: "/images/imgs/wooden framed 4/woodenframed3.jpg",
 description: "A vintage-inspired mirror with wooden framing, perfect for stylish hallways."
 },
 {
@@ -424,9 +427,9 @@ materialType: "Wooden Framed",
 mirrorType: "Bedroom Mirror",
 size: "22x28",
 size2: "26x34",
-image: "https://picsum.photos/seed/mirror26a/500/500",
-image2: "https://picsum.photos/seed/mirror26b/500/500",
-image3: "https://picsum.photos/seed/mirror26c/500/500",
+image: "/images/imgs/wooden framed 5/woodenframed2.jpg",
+image2: "/images/imgs/wooden framed 5/woodenframed1.jpg",
+image3: "/images/imgs/wooden framed 5/woodenframed3.jpg",
 description: "A refined wooden framed mirror designed for cozy and elegant bedrooms."
 },
 {
@@ -438,9 +441,9 @@ materialType: "LED",
 mirrorType: "Bathroom Mirror",
 size: "23x31",
 size2: "27x35",
-image: "https://picsum.photos/seed/mirror27a/500/500",
-image2: "https://picsum.photos/seed/mirror27b/500/500",
-image3: "https://picsum.photos/seed/mirror27c/500/500",
+image: "images/imgs/LED3/LED1.jpg",
+image2: "images/imgs/LED3/LED2.jpg",
+image3: "images/imgs/LED3/LED3.jpg",
 description: "A stylish LED mirror offering bright lighting and a modern bathroom experience."
 },
 {
@@ -485,12 +488,14 @@ image2: "https://picsum.photos/seed/mirror30b/500/500",
 image3: "https://picsum.photos/seed/mirror30c/500/500",
 description: "A contemporary round mirror designed to enhance entryway aesthetics."
 }]
+
+// display prod 
 let main=document.getElementById('containerp')
 for(let i=0;i<mirrors.length;i++){
     main.innerHTML+=`<div class="col-6 col-sm-6 g-5 col-lg-4">
   <a href="./single.html?id=${mirrors[i].id}" class="card-link">
                 <div class="card text-left">
-                    <img class="card-img-top" src="${mirrors[i].image}" alt="">
+                    <img class="card-img-top" src="${mirrors[i].image}" alt="" >
                     <div class="card-body">
                         <h4 class="card-title fs-4">${mirrors[i].name}</h4>
                         <p class="card-text text-dark fs-5">Rs. <b>${mirrors[i].price}</b></p>
@@ -502,11 +507,158 @@ for(let i=0;i<mirrors.length;i++){
                 </a>
             </div>`
 }
-// SELECTOR FILTER 
-    let typeselect=document.getElementById('mirror-type');
-    let materialselect=document.getElementById('material-type');
-    let container=document.getElementById('containerp')
+// filter 
+let container = document.getElementById('containerp');
+let typeselect = document.getElementById('mirror-type');
+let materialselect = document.getElementById('material-type');
+
+function filterproducts(e) {
+    if (e) e.preventDefault();
+
+    let selectedtype = typeselect.value;
+    let selectedmaterial = materialselect.value;
+
+    let filtered = mirrors.filter(item => {
+       
+        let typematch = selectedtype === 'All' || item.mirrorType === selectedtype;
+        
+        let materialMatch = selectedmaterial === 'All' || item.materialType === selectedmaterial;
+ 
+        return typematch && materialMatch;
+    });
+    
+    displayProducts(filtered);
+}
+
+function displayProducts(productslist) {
+    container.innerHTML = "";
+
+    if (productslist.length === 0) {
+        container.innerHTML = `
+            <div class="col-12 text-center py-5">
+                <h4 class="text-muted">No mirrors found matching these filters.</h4>
+                <p>Try selecting different criteria.</p>
+            </div>`;
+        return;
+    }
+
+    productslist.forEach(item => {
+        container.innerHTML += `
+            <div class="col-6 col-sm-6 g-5 col-lg-4">
+  <a href="./single.html?id=${item.id}" class="card-link">
+                <div class="card text-left">
+                    <img class="card-img-top" src="${item.image}" alt="" style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title fs-4">${item.name}</h4>
+                        <p class="card-text text-dark fs-5">Rs. <b>${item.price}</b></p>
+                        <p class="card-text text-muted fs-6 text-truncate " id='description'>${item.description}</p>
+                        
+                        
+                    </div>
+                </div>
+                </a>
+            </div>
+        `;
+    });
+}
+
+
+document.querySelector('button.ms-5').addEventListener('click', filterproducts);
+
+displayProducts(mirrors);
+/* ============================ SEARCHLOGIC ============================= */
+function displayMirrors(data) {
+    const container = document.getElementById('containerp');
+    if (!container) return; 
+    
+    container.innerHTML = ""; 
+
+    if (data.length === 0) {
+        container.innerHTML = `<div class="col-12 mt-5"><h3>No mirrors found matching your search.</h3></div>`;
+        return;
+    }
 
     
+    for (let i = 0; i < data.length; i++) {
+        container.innerHTML += `
+            <div class="col-6 col-sm-6 g-5 col-lg-4">
+                <a href="./single.html?id=${data[i].id}" class="card-link">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="${data[i].image}" alt="" style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title fs-4">${data[i].name}</h4>
+                            <p class="card-text text-dark fs-5">Rs. <b>${data[i].price}</b></p>
+                            <p class="card-text text-muted fs-6 text-truncate" id='description'>${data[i].description}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>`;
+    }
+}
+document.addEventListener('DOMContentLoaded', () => {
+   
+    if (typeof mirrors === 'undefined') {
+        console.error("The 'mirrors' array is not found. Make sure it is defined above this script.");
+        return;
+    }
+
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get('q');
+ 
+  
+    if (query) {
+        const searchTerm = query.toLowerCase();
+        const filtered = mirrors.filter(m => 
+            m.name.toLowerCase().includes(searchTerm) || 
+            m.materialType.toLowerCase().includes(searchTerm) ||
+            m.mirrorType.toLowerCase().includes(searchTerm)
+        );
+        displayMirrors(filtered);
+        if(searchInput) searchInput.value = query;
+    } else {
     
-// =================SEARCH====================
+        displayMirrors(mirrors);
+    }
+
+    
+    if(searchInput && searchResults) {
+        searchInput.addEventListener('input', () => {
+            const value = searchInput.value.toLowerCase().trim();
+            searchResults.innerHTML = ''; 
+
+            if (value.length > 0) {
+                const liveMatches = mirrors.filter(m => 
+                    m.name.toLowerCase().includes(value) || 
+                    m.mirrorType.toLowerCase().includes(value)
+                ).slice(0, 5);
+
+                if (liveMatches.length > 0) {
+                    searchResults.style.display = 'block';
+                    liveMatches.forEach(m => {
+                        const item = document.createElement('a');
+                        item.href = `./products.html?q=${encodeURIComponent(m.name)}`; 
+                        item.className = 'search--result-item';
+                        item.innerHTML = `
+                            <div style="display: flex; align-items: center; gap: 10px; padding: 5px;">
+                                <img src="${m.image}" style="width: 30px; height: 30px; object-fit: cover;">
+                                <span style="font-size: 14px; color: #333;">${m.name}</span>
+                            </div>`;
+                        searchResults.appendChild(item);
+                    });
+                } else {
+                    searchResults.style.display = 'none';
+                }
+            } else {
+                searchResults.style.display = 'none';
+            }
+        });
+    }
+});
+if (searchInput) {
+    searchInput.parentElement.addEventListener('submit', (e) => {
+       
+    });
+}
+AOS.init();

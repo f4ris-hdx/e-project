@@ -1,6 +1,7 @@
 const queryString =window.location.search
 const urlParams =new URLSearchParams(queryString);
 const productID =urlParams.get('id');
+AOS.init();
 // NAVBAR 
 /*===== MENU SHOW =====*/
 const navMenu = document.getElementById('nav-menu'),
@@ -76,9 +77,9 @@ materialType: "Antique",
 mirrorType: "Dining Room Mirror",
 size: "24x30",
 size2: "28x34",
-image: "https://picsum.photos/seed/mirror1a/500/500",
-image2: "https://picsum.photos/seed/mirror1b/500/500",
-image3: "https://picsum.photos/seed/mirror1c/500/500",
+image: "/images/imgs/antique/antique1.jpg",
+image2: "/images/imgs/antique/antique2.jpg",
+image3: "/images/imgs/antique/antique3.jpg",
 description: "An elegant antique‑style mirror designed to enhance dining room interiors with a refined and timeless aesthetic."
 },
 {
@@ -104,9 +105,9 @@ materialType: "Wooden Framed",
 mirrorType: "Hallway Mirror",
 size: "20x28",
 size2: "24x32",
-image: "https://picsum.photos/seed/mirror3a/500/500",
-image2: "https://picsum.photos/seed/mirror3b/500/500",
-image3: "https://picsum.photos/seed/mirror3c/500/500",
+image: "/images/imgs/wooden framed1/woodenframed2.jpg",
+image2: "/images/imgs/wooden framed1/woodenframed1.jpg",
+image3: "/images/imgs/wooden framed1/woodenframed3.jpg",
 description: "A beautifully crafted wooden framed mirror that adds vintage charm to hallways."
 },
 {
@@ -486,7 +487,7 @@ image: "https://picsum.photos/seed/mirror30a/500/500",
 image2: "https://picsum.photos/seed/mirror30b/500/500",
 image3: "https://picsum.photos/seed/mirror30c/500/500",
 description: "A contemporary round mirror designed to enhance entryway aesthetics."
-}]
+},]
 
 
 const singleproduct=mirrors.find(function(item){
@@ -502,13 +503,13 @@ container.innerHTML=` <div class="col-md-6">
              <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="${singleproduct.image}" class="d-block w-100" alt="...">
+      <img src="${singleproduct.image}" class="d-block w-100" alt="..." style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;">
     </div>
     <div class="carousel-item">
-      <img src="${singleproduct.image2}"" class="d-block w-100" alt="...">
+      <img src="${singleproduct.image2}"" class="d-block w-100" alt="..." style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;">
     </div>
     <div class="carousel-item">
-      <img src="${singleproduct.image3}"" class="d-block w-100" alt="...">
+      <img src="${singleproduct.image3}"" class="d-block w-100" alt="..." style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -556,7 +557,7 @@ function highlight(clickedButton){
                 <div class="col-6 col-sm-5 g-3 col-lg-3">
                     <a href="./single.html?id=${item.id}" class="card-link text-decoration-none">
                         <div class="card text-left h-100">
-                            <img class="card-img-top" src="${item.image}" alt="${item.name}">
+                            <img class="card-img-top" src="${item.image}" alt="${item.name}" style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;">
                             <div class="card-body">
                                 <h4 class="card-title fs-4 text-dark">${item.name}</h4>
                                 <p class="card-text text-dark fs-5">Rs. <b>${item.price.toLocaleString()}</b></p>

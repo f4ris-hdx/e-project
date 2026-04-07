@@ -41,6 +41,12 @@
   margin-top: 2rem;
   color: #252525;
 }
+#hero #infohero a:hover{
+  transition: all;
+  transition-duration: 400ms;
+  color: #000000;
+  background-color:var(--container-color)
+}
 @media only screen and (max-width: 768px) {
   html {
     font-size: 10px;
@@ -316,7 +322,9 @@ text-decoration:none;
 }
 
 /* ============================search============================= */
- .search--form{display: flex;
+ .search--form{
+position: relative;
+  display: flex;
 align-items: center;
 column-gap: .5rem;
 width: 40%;
@@ -356,6 +364,32 @@ transition: transform .4s;
   pointer-events: initial;
 }
 .show-search .search--form{transform: translateY(0);}
+.search--results {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 100%;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 32px hsla(230, 75%, 15%, .2);
+  border-radius: 0 0 0.5rem 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+  z-index: 100;
+}
+
+.search--result-item {
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid hsla(230, 75%, 15%, .1);
+  color: var(--title-color);
+  display: block;
+  text-decoration: none;
+}
+
+.search--result-item:hover {
+  background-color: rgb(255, 255, 255);
+}
 /*=============== LOGIN ===============*/
 .login--form, 
 .login--group {
@@ -505,3 +539,27 @@ margin-right: 16rem;
 .active2{
   border:2px solid blue !important;
 }
+
+/* ==================contact================  */
+#contact-card:hover{
+  transition: 250ms ease-in-out ;
+  transform: scale(1.05);
+}
+
+/* ================================================animations =========================================================== */
+/* fortext */
+/* FOCUS  */
+
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+.text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+
+
+/* EXPAND  */
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+.tracking-in-expand{animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+
+/* FOR BTN  */
+
+
+@keyframes bounce-bottom{0%{transform:translateY(45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(24px);animation-timing-function:ease-in}65%{transform:translateY(12px);animation-timing-function:ease-in}82%{transform:translateY(6px);animation-timing-function:ease-in}93%{transform:translateY(4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+.bounce-bottom{animation:bounce-bottom .9s both}

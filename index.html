@@ -6,7 +6,9 @@
     <title>index</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<!-- css -->
+<!-- AOS  -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
    <link rel="stylesheet" href="style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,7 @@
 </head>
 <body>
   <!--=============================== NAVBAR  ========================-->
-     <!-- header  -->
+      <!-- header  -->
 <header id="header">
   <!-- navbar  -->
   <nav class="nav--container" id="nav-container">
@@ -44,8 +46,6 @@
   </div>
 </div>
 <div class="nav--actions" id="nav-actions">
-  <!-- search button  -->
-   <i class="fa-solid fa-magnifying-glass nav--search"  id="search-btn"></i>
    <!-- login button  -->
     <i class="fa-solid fa-user nav--login" id="login-btn"></i>
     
@@ -54,14 +54,6 @@
 </div>
   </nav>
 </header>
-<!-- =============SEARCH============  -->
-<div class="s34rch" id="s34rch">
-  <form action="" class="search--form">
-    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-    <input type="search" placeholder="What are you looking for?" class="search--input">
-  </form>
-  <i class="fa-solid fa-xmark search--close" id="search-close"></i>
-</div>
 <!--  =============LOGIN=============  --> 
  <div class="login" id="login">
   <form action="" class="login--form">
@@ -95,10 +87,10 @@
 <section id="hero">
   <div id="containerhero">
     <div id="infohero">
-      <h1>Clear Reflections</h1>
-      <h2>Where every reflection shines brighter</h2>
-      <p>Variety of widely availible mirrors delivered at your doorstep</p>
-      <a href="/products.html">Our Products</a>
+      <h1 class="tracking-in-expand">Clear Reflections</h1>
+      <h2 class="text-focus-in">Where every reflection shines brighter</h2>
+      <p class="text-focus-in">Variety of widely availible mirrors delivered at your doorstep</p>
+      <a href="/products.html" class="bounce-bottom">Our Products</a>
     </div>
   </div>
 </section>
@@ -111,80 +103,27 @@
     </h2>
 
     <div id="features-grid">
-      <div id="feature-box">
+      <div data-aos="fade-right" id="feature-box">
         
-        <i class="fa-solid fa-truck" id="font"></i>
+        <i class="fa-solid fa-truck fa-bounce" id="font"></i>
         <h3>Fast Delivery</h3>
         <p>We have our own delivery courier and we deliver fast accross all region</p>
       </div>
 
-      <div id="feature-box">
-        <i class="fa-solid fa-certificate" id="font"></i>
+      <div data-aos="fade-up" id="feature-box">
+       <i class="fa-solid fa-certificate fa-beat-fade" id="font"></i>
         <h3>Long term Warranty</h3>
         <p>In Any case of inconvience we offer long term warranty for our every product.</p>
       </div>
 
-      <div id="feature-box">
-        <i class="fa-solid fa-headset" id="font"></i>
+      <div data-aos="fade-left" id="feature-box">
+ <i class="fa-solid fa-headset fa-shake" id="font"></i>
         <h3>Customer Support</h3>
         <p>We priortize our customers,For that we have 24/7 customer support.</p>
       </div>
   </div>
 </section>
-  <div id="newarrivals" class="container">
- <div class="row text-center">
-            <div class="col-12">
-
-                <h2 id="new"> New Arrivals</h2>
-
-            </div>
-            <div class="col-lg-3 col-12 mb-4">
-                <div class="card">
-                    <img class="card-img-top" id="newcardimg" src="/images/MIR017_5a39001a-2520-4b8f-8918-a44e8868c0ed.webp" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Bluetooth Mirrors</h4>
-                        <p class="card-text">Designed with built-in Bluetooth technology</p>
-                        <!-- <p class="card-text fs-6 opacity-75 text-end">click-to-view</p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-12 mb-4">
-                <div class="card">
-                    <img class="card-img-top" id="newcardimg" src="/images/880D3BDB-DE9B-4F3A-BA46-5D0EC86ACE20.webp" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Decorative Mirrors</h4>
-                        <p class="card-text">Artistic Mirrors designed to enhance interiors</p>
-                        <!-- <p class="card-text fs-6 opacity-75 text-end">click-to-view</p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-12 mb-4">
-                <div class="card">
-                    <img class="card-img-top" id="newcardimg" src="/images/880D3BDB-DE9B-4F3A-BA46-5D0EC86ACE20.webp" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Decorative Mirrors</h4>
-                        <p class="card-text">Artistic Mirrors designed to enhance interiors</p>
-                        <!-- <p class="card-text fs-6 opacity-75 text-end">click-to-view</p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-12 mb-4">
-                <div class="card">
-                    <img class="card-img-top" id="newcardimg" src="/images/Arcurva_Dark_Wood_homedesign.meadowview_2_1800x.avif" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Irregular Mirrors</h4>
-                        <p class="card-text">modern, statement-making decor piece</p>
-                        <!-- <p class="card-text fs-6 opacity-75 text-end">click-to-view</p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
- </div>
-  
- <!-- best selling  -->
-  <div id="bestselling" class="row">
- <h2 class="col-12">Best Selling</h2>
-  </div>
+ 
   <!-- faq  -->
 <div class="container row text-center d-flex align-content-center justify-content-center">
 
@@ -394,7 +333,8 @@
   <!-- Footer -->
 </div>
 <!-- End of .container -->
-
+<!-- AOS  -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
 <!-- bootstrap js  -->
