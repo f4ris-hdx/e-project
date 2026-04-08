@@ -259,9 +259,9 @@ materialType: "Metal Bordered",
 mirrorType: "Office Mirror",
 size: "21x29",
 size2: "25x33",
-image: "https://picsum.photos/seed/mirror14a/500/500",
-image2: "https://picsum.photos/seed/mirror14b/500/500",
-image3: "https://picsum.photos/seed/mirror14c/500/500",
+image: "/images/imgs/metal2/metal2.jpg",
+image2: "/images/imgs/metal2/metal1.jpg",
+image3: "/images/imgs/metal2/metal3.jpg",
 description: "A minimalist metal‑bordered mirror that blends into modern office environments cleanly."
 },
 {
@@ -315,9 +315,9 @@ materialType: "Frameless",
 mirrorType: "Salon Mirror",
 size: "20x26",
 size2: "24x30",
-image: "https://picsum.photos/seed/mirror18a/500/500",
-image2: "https://picsum.photos/seed/mirror18b/500/500",
-image3: "https://picsum.photos/seed/mirror18c/500/500",
+image: "images/imgs/frameless/frameless3.jpg",
+image2: "images/imgs/frameless/frameless2.jpg",
+image3: "images/imgs/frameless/frameless1.jpg",
 description: "A frameless vanity mirror ideal for salons with a modern and clean finish."
 },
 {
@@ -329,9 +329,9 @@ materialType: "Antique",
 mirrorType: "Living Room Mirror",
 size: "25x33",
 size2: "30x38",
-image: "https://picsum.photos/seed/mirror19a/500/500",
-image2: "https://picsum.photos/seed/mirror19b/500/500",
-image3: "https://picsum.photos/seed/mirror19c/500/500",
+image: "/images/imgs/antique2/antique1.jpg",
+image2: "/images/imgs/antique2/antique2.jpg",
+image3: "/images/imgs/antique2/antique3.jpg",
 description: "An antique luxury mirror that enhances the elegance of living room interiors."
 },
 {
@@ -491,13 +491,17 @@ description: "A contemporary round mirror designed to enhance entryway aesthetic
 
 // display prod 
 let main=document.getElementById('containerp')
-for(let i=0;i<mirrors.length;i++){
-    main.innerHTML+=`<div class="col-6 col-sm-6 g-5 col-lg-4">
+function reset(e){
+
+main.innerHTML=``;
+    for(let i=0;i<mirrors.length;i++){
+
+        main.innerHTML+=`<div class="col-6 col-sm-6 g-5 col-lg-4">
   <a href="./single.html?id=${mirrors[i].id}" class="card-link">
                 <div class="card text-left">
-                    <img class="card-img-top" src="${mirrors[i].image}" alt="" >
+                    <img class="card-img-top" src="${mirrors[i].image}" alt="" style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;" >
                     <div class="card-body">
-                        <h4 class="card-title fs-4">${mirrors[i].name}</h4>
+                        <h6 class="card-text">${mirrors[i].name}</h6>
                         <p class="card-text text-dark fs-5">Rs. <b>${mirrors[i].price}</b></p>
                         <p class="card-text text-muted fs-6 text-truncate " id='description'>${mirrors[i].description}</p>
                         
@@ -507,6 +511,8 @@ for(let i=0;i<mirrors.length;i++){
                 </a>
             </div>`
 }
+}
+reset()
 // filter 
 let container = document.getElementById('containerp');
 let typeselect = document.getElementById('mirror-type');
@@ -661,4 +667,3 @@ if (searchInput) {
        
     });
 }
-AOS.init();
